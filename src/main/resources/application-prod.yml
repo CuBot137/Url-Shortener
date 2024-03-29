@@ -6,7 +6,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql:///postgres
-    username: postgres
+    user: postgres
     password: spoon
     hikari:
       data-source-properties:
