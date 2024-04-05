@@ -1,18 +1,23 @@
 package com.zinkworks.bountyhuntersurlshortener;
 
-import com.google.auth.oauth2.GoogleCredentials;
-import com.google.cloud.storage.Storage;
-import com.google.cloud.storage.StorageOptions;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.sql.DataSource;
+
 
 @SpringBootApplication
 @EnableJpaRepositories
@@ -21,6 +26,8 @@ public class UrlShortenerApplication {
 
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(UrlShortenerApplication.class, args);
+
+
 
 //		String projectId = "url-shortener-417915";
 //
@@ -33,7 +40,5 @@ public class UrlShortenerApplication {
 //				.build()
 //				.getService();
 	}
-
-
-
+	
 }
