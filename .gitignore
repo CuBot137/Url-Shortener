@@ -17,8 +17,7 @@ dist/
 *.log
 
 # Package files
-*.jar
-*.env.yaml
+
 
 # Maven
 
