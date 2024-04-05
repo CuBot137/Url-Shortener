@@ -1,8 +1,8 @@
-FROM maven:3.6.3-jdk-17 as builder
+FROM maven:3.9.6 as builder
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
-RUN mvn package -DskipTests
+RUN mvn clean package -DskipTests
 
 
 FROM openjdk:17-jdk-alpine
