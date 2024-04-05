@@ -1,4 +1,4 @@
-FROM maven:3.6.3-jdk-13 as builder
+FROM maven:3.6.3-jdk-17 as builder
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
