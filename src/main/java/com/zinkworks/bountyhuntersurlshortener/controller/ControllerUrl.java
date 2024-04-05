@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URI;
 
@@ -57,7 +58,7 @@ public class ControllerUrl {
     }
 
     @PostMapping
-    public ResponseEntity<String> createShortUrl(@RequestBody String originalUrl ) throws MalformedURLException, BlackListedUrlException, InvalidUrlException, FileNotFoundException {
+    public ResponseEntity<String> createShortUrl(@RequestBody String originalUrl ) throws IOException, BlackListedUrlException, InvalidUrlException {
         String shortUrl = urlService.addNewUrl(originalUrl);
         if(shortUrl.isEmpty()){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Shorten URL not created");

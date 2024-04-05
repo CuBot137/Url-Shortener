@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class UrlService {
         return repositoryUrl.findAll();    // returns all database info from the repository class.
     }
 
-    public String addNewUrl(String originalUrl) throws InvalidUrlException, MalformedURLException, BlackListedUrlException, FileNotFoundException {
+    public String addNewUrl(String originalUrl) throws InvalidUrlException, IOException, BlackListedUrlException {
         boolean blackList = BlackList.checkBlackList(originalUrl);
         String createdShortUrl = "";
         if (UrlValiditation.isValid(originalUrl)) {

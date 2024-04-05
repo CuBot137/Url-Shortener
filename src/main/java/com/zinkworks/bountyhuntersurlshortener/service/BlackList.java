@@ -2,6 +2,7 @@ package com.zinkworks.bountyhuntersurlshortener.service;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.Scanner;
 
 public class BlackList {
 
-    public static boolean checkBlackList(String originalURL) throws FileNotFoundException {
+    public static boolean checkBlackList(String originalURL) throws IOException {
         List<String> blackList = new ArrayList<>();
         // Load the file from the classpath
         InputStream inputStream = BlackList.class.getResourceAsStream("/keywordsForBlacklist.txt");
@@ -22,6 +23,7 @@ public class BlackList {
             blackList.add(str);
         }
         scanner.close();
+        inputStream.close();
 
         for (String substring : blackList) {
             if (originalURL.contains(substring)) {

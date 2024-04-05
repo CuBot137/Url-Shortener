@@ -11,6 +11,7 @@ import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.web.util.UriComponentsBuilder;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.List;
 import static org.mockito.Mockito.when;
@@ -33,7 +34,7 @@ class UrlServiceTest {
 
     @Test
     @DisplayName("Testing to see if a short url is created ")
-    void createNewShortUrlValidUrl() throws MalformedURLException, BlackListedUrlException, FileNotFoundException, InvalidUrlException {
+    void createNewShortUrlValidUrl() throws IOException, BlackListedUrlException, InvalidUrlException {
         when(urlService.addNewUrl("https://www.youtube.com/"))
                 .thenReturn("0xE0O6P");
     }
@@ -56,14 +57,14 @@ class UrlServiceTest {
 
     @Test
     @DisplayName("Testing for exception when url is blacklisted")
-    void createNewShortUrlBlacklistedUrl() throws MalformedURLException, BlackListedUrlException, FileNotFoundException, InvalidUrlException {
+    void createNewShortUrlBlacklistedUrl() throws IOException, BlackListedUrlException, InvalidUrlException {
         when(urlService.addNewUrl("https://www.cunt.com/"))
                 .thenThrow(new BlackListedUrlException("The url you entered is on our blacklist."));
     }
 
     @Test
     @DisplayName("Testing for exception when url is not valid")
-    void createNewShortUrlInvalidUrl() throws MalformedURLException, BlackListedUrlException, FileNotFoundException, InvalidUrlException {
+    void createNewShortUrlInvalidUrl() throws IOException, BlackListedUrlException, InvalidUrlException {
         when(urlService.addNewUrl("invalid information"))
                 .thenThrow(new MalformedURLException());
     }
