@@ -18,6 +18,7 @@ dist/
 
 # Package files
 *.jar
+*.env.yaml
 
 # Maven
 target/
