@@ -18,6 +18,7 @@ dist/
 
 # Package files
 *.jar
+url-shortener-417915-eddf028a9eca.json
 
 # Maven
 target/
