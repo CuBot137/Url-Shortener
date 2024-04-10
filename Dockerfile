@@ -4,7 +4,7 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 COPY .mvn/ .mvn
-RUN ./mvn clean install
+RUN apk add --no-cache maven && mvn clean install
 
 # Second stage: build the application using the jar file from the first stage
 FROM openjdk:17-jdk-alpine
