@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: UrlShort
+spec:
+  template:
+    spec:
+      containers:
+        - name: UrlShort  # Replace with your container name (usually same as service name)
+          image: gcr.io/url-shortener/UrlShort  # Replace with your container image name (e.g., gcr.io/your-project/your-image)
+          ports:
+            - containerPort: 8080  # Replace with your application's port (if different)
+---
