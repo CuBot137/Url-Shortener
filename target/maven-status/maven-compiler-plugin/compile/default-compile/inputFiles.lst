@@ -4,14 +4,12 @@ C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhunte
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\exceptions\InvalidUrlException.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\service\MD5Hash.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\exceptions\EmptyTablesException.java
-C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\cloudsql\ConnectionPoolFactory.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\exceptions\ShortUrlIsPresentException.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\exceptions\UrlIdNotFoundException.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\service\UrlValiditation.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\model\BountyUrlTable.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\service\UrlService.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\exceptions\UrlNotFoundException.java
-C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\cloudsql\ConnectorConnectionPoolFactory.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\exceptions\BlackListedUrlException.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\UrlShortenerApplication.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\repository\RepositoryUrl.java

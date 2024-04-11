@@ -1,13 +1,21 @@
 steps:
-# Build the container image
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/url-shortener-417915/docker.io/clynam/vol1', '.']
-# Push the container image to Container Registry
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/url-shortener-417915/docker.io/clynam/vol1']
-# Deploy container image to Cloud Run
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  entrypoint: gcloud
-  args: ['run', 'deploy', 'urlshort', '--image', 'gcr.io/url-shortener-417915/docker.io/clynam/vol1', '--region', 'europe-west10', "./backend"]
+  # Build the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$_PROJECT_ID/urlshort:$COMMIT_SHA', '.']
+  # Push the container image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$_PROJECT_ID/urlshort:$COMMIT_SHA']
+  # Deploy container image to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'urlshort'
+      - '--image'
+      - 'gcr.io/$_PROJECT_ID/urlshort:$COMMIT_SHA'
+      - '--region'
+      - '$_REGION'
+      - '--allow-unauthenticated'
 images:
-  - gcr.io/url-shortener-417915/docker.io/clynam/vol1
+  - 'gcr.io/$_PROJECT_ID/urlshort:$COMMIT_SHA'
