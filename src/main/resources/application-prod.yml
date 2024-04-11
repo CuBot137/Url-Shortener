@@ -12,8 +12,6 @@ spring:
       data-source-properties:
         socketFactory: com.google.cloud.sql.postgres.SocketFactory
         cloudSqlInstance: url-shortener-417915:europe-west4:mypostgres
-#        credentialsPath: C:\Users\ConorLynam\Downloads\url-shortener-417915-eddf028a9eca.json
-
 
   jpa:
     hibernate:

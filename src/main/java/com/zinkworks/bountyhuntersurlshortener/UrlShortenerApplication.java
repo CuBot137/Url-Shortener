@@ -27,18 +27,6 @@ public class UrlShortenerApplication {
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(UrlShortenerApplication.class, args);
 
-
-
-//		String projectId = "url-shortener-417915";
-//
-//		String keyFilePath = "C:\\Users\\ConorLynam\\OneDrive - Zinkworks\\Desktop\\Google Cloud Platform";
-//
-//		GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream(keyFilePath));
-//
-//		Storage storage = StorageOptions.newBuilder()
-//				.setCredentials(credentials)
-//				.build()
-//				.getService();
 	}
 	
 }
