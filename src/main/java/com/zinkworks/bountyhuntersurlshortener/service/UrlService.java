@@ -42,8 +42,6 @@ public class UrlService {
                 BountyUrlTable newRecord = new BountyUrlTable();
                 newRecord.setShortUrl(createdShortUrl);
                 newRecord.setOriginalUrl(originalUrl);
-
-
                 repositoryUrl.save(newRecord);
             }
         }
