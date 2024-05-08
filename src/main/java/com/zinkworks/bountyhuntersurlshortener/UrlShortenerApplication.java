@@ -26,6 +26,6 @@ public class UrlShortenerApplication {
 
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(UrlShortenerApplication.class, args);
-		//test123456
+		//test1234567
 	}
 }
