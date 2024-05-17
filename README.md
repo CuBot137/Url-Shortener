@@ -50,3 +50,4 @@ Looking back at it now, it is not that complicated. However, when we were first 
 
 # Update
 This project is now hosted on Google Cloud's Cloud Run. Here is a link to how I did it: [Hosting Spring Boot App with Cloud Run - Continuous Deployment](https://conorlynam.wordpress.com/2024/04/11/hosting-springboot-app-with-cloud-run-continuous-deployment/)
+![GoogleCloudDiagram.png](..%2F..%2FOneDrive%20-%20Zinkworks%2FDesktop%2FGoogleCloudDiagram.png)
