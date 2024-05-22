@@ -12,7 +12,7 @@ spring:
     hikari:
       data-source-properties:
         socketFactory: com.google.cloud.sql.postgres.SocketFactory
-        cloudSqlInstance: shorter3:us-central1:url-db
+        cloudSqlInstance: function-project-423615:us-central1:url-db
 
   jpa:
     hibernate:

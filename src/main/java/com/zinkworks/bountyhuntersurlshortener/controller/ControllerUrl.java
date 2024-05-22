@@ -11,14 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URI;
-
 import java.util.List;
-
 
 
 @RestController
@@ -36,10 +30,6 @@ public class ControllerUrl {
     public List<BountyUrlTable> getAllUrls() {
         return urlService.getAllUrlInfo();
     }
-
-
-    //Constructor class
-
 
 //ResponseEntity<String> is class that represent an HTTP response, In here Type of content is String
 //GET Method for retrieve information from a server.
@@ -83,7 +73,6 @@ public class ControllerUrl {
 
         //The URL to delete passed to server and got the responses.
         boolean deleted = urlService.deleteUrl(short_url);
-
 
         if (deleted) {
             //Delete successful completed.
