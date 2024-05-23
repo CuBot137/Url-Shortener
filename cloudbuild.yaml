@@ -4,9 +4,10 @@ args:
   - gcloud
   - functions
   - deploy
-  - funky
+  - function-http
   - --region=us-central1
   - --source=.
   - --trigger-http
   - --runtime=java17
   - --entry-point com.zinkworks.bountyhuntersurlshortener.google.HttpFunctions
+  - --no-cache
