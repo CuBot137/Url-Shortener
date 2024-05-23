@@ -19,8 +19,8 @@ public class HttpFunctions implements HttpFunction {
 
     @Override
     public void service(HttpRequest httpRequest, HttpResponse httpResponse) throws Exception {
-        BufferedWriter bufferedWriter = httpResponse.getWriter();
-        String responseMessage;
+        BufferedWriter writer = httpResponse.getWriter();
+        String responseMessage = "";
 
         switch (httpRequest.getMethod()){
             case "GET":
@@ -38,5 +38,6 @@ public class HttpFunctions implements HttpFunction {
             default:
                 ResponseEntity.notFound();
         }
+        writer.write(responseMessage);
     }
 }
