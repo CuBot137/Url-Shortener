@@ -1,4 +1,5 @@
 com\zinkworks\bountyhuntersurlshortener\exceptions\CustomeExceptionHandler.class
+com\zinkworks\bountyhuntersurlshortener\google\HttpFunctions.class
 com\zinkworks\bountyhuntersurlshortener\exceptions\InvalidUrlException.class
 com\zinkworks\bountyhuntersurlshortener\controller\ControllerUrl.class
 com\zinkworks\bountyhuntersurlshortener\service\MD5Hash.class

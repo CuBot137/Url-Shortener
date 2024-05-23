@@ -6,6 +6,7 @@ C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhunte
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\exceptions\EmptyTablesException.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\exceptions\ShortUrlIsPresentException.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\exceptions\UrlIdNotFoundException.java
+C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\google\HttpFunctions.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\service\UrlValiditation.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\model\BountyUrlTable.java
 C:\Users\ConorLynam\Coding\Url-Shortener\src\main\java\com\zinkworks\bountyhuntersurlshortener\service\UrlService.java
